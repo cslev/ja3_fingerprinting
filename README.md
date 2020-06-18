@@ -1,5 +1,5 @@
 # ja3_fingerprinting
-This repository shows that JA3(S) fingerprinting is not unique enough to identify arbitrary services
+This repository shows that while JA3(S) fingerprinting is really useful to maintain a fingerprint database of clients in a controlled environment, identifying individual Web services in the wild, however, is not trivial and sometimes provides the same fingerprint for different services.
 
 ## Btw., what is JA3(S) fingerprinting?
 TL;DR - A JA3 hash represents the fingerprint of an SSL/TLS client application that allows for simple and effective detection of client applications such as Chrome running on OSX (JA3=94c485bca29d5392be53f2b8cf7f4304) or the Dyre malware family running on Windows (JA3=b386946a5a44d1ddcc843bc75336dfce) or Metasploit’s Meterpreter running on Linux (JA3=5d65ea3fb1d4aa7d826733d2f2cbbb1d). JA3 allows us to detect these applications, malware families, and pen testing tools, regardless of their destination, Command and Control (C2) IPs, or SSL certificates.
